@@ -1,0 +1,25 @@
+On linux, we need to do the following:
+1- We need to make the Script Executable by using the following command:
+chmod +x copy_to_hdfs_linux.sh
+
+2- We need to run the script using the following command:
+./copy_to_hdfs_linux.sh
+
+3- We need to check hdfs using the following command:
+hadoop fs -ls /user/mouss/input/
+#note that mouss is my username, and you can replace it with your username
+(To check your system's username, you can use the following command in your terminal or command prompt: whoami)
+
+On windows, we need to do the following:
+1- We need to run the following script by opening the command prompt (cmd) in the path of the file:
+copy_to_hdfs.bat
+
+2-If any error occured, we need to start hadoop by opening the command prompt (cmd) in the path of the file, and insert the following code:
+start-dfs.sh
+start-yarn.sh
+
+3-We need to rerun the first script: copy_to_hdfs.bat
+
+=====================================================================
+In any case, the most important file in our work is (mapreduce-all.py)
+
