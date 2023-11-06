@@ -1,2 +1,0 @@
-black white yellow 
-orange blue turquoise
